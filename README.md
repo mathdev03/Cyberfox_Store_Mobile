@@ -24,4 +24,24 @@ Objetivo: carregar configurações e direcionar para login ou cadastro.
 
 Tela 2 — Cadastro (email e senha)
 Objetivo: criar conta com email + senha.
-![alt text](github.com/mathdev03/Cyberfox_Store_Mobile/blob/master/IMAGENS/Criar%20conta.jpeg?raw=true "Tela de cadastro")
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Criar%20conta.jpeg "Tela de cadastro")
+
+Tela 3 — Cadastro usuário (apelido / perfil)
+Objetivo: completar perfil com apelido e avatar opcional.
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Cadastro%2002.jpeg "Tela de cadastro usuário")
+
+Tela 4 — Logar Usuário
+Objetivo: usuário poder logar assim que estiver cadastro no app
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Login.jpeg "Tela de login")
+
+Tela 5 — Dashboard (Principal / Vitrine)
+Objetivo: apresentar jogos, barra de busca.
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Dashboard.jpeg "Tela de Dashboard")
+
+Tela 6 — Biblioteca
+Objetivo: listar jogos comprados/ativados pelo usuário.
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Biblioteca.jpeg "Tela Biblioteca")
+
+Tela 7 — Descrição do Jogo (Produto)
+Objetivo: apresentar detalhes do jogo: imagens, descrição, requisitos, avaliações, preço, botão Comprar.
+![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Descrição%20Jogo.jpeg "Tela do produto")
