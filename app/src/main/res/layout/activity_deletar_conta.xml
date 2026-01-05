@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    tools:context=".user.DeletarContaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="CYBERFOX STORE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:text="Excluir Conta"
+        android:layout_gravity="center"
+        android:layout_marginTop="20mm"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Deseja realmente excluir sua conta?"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_personalizado04"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Excluir conta"
+        android:textColor="@color/white"
+        android:id="@+id/btnExcluir"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_personalizado03"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="VOLTAR
+"
+        android:textColor="@color/white"
+        android:id="@+id/btnVoltar"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

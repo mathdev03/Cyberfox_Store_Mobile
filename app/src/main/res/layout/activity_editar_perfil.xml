@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    tools:context=".user.EditarPerfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cabecalho"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="CYBERFOX STORE"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/btnVoltarProfile"
+            android:background="@drawable/ic_launcher_setaesquerda_foreground"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/img_perfil"
+        android:contentDescription="Escolher foto de perfil"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUARIO"
+        android:id="@+id/txtTituloUsuario"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botao_personalizado03"
+            android:text="Alterar Email"
+            android:id="@+id/btnAltEmail"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botao_personalizado03"
+            android:layout_marginBottom="8dp"
+            android:text="alterar senha"
+            android:id="@+id/btnAltSenha"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botao_personalizado03"
+            android:text="Excluir Conta"
+            android:id="@+id/btnExcluirConta"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

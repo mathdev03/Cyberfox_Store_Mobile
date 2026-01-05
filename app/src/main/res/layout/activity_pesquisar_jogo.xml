@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesquisarJogoActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cabecalho"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="CYBERFOX STORE"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/btnPaginaP"
+            android:background="@drawable/ic_launcher_setaesquerda_foreground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:hint="Pesquisar"
+            android:textColorHint="#4D4D4D"
+            android:id="@+id/edtNomeP"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:background="@drawable/custom_edit_text"/>
+
+        <ImageButton
+            android:id="@+id/btnPesquisar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_search"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Item Posterior" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lsvJogo"/>
+</LinearLayout>

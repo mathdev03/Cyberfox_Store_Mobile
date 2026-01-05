@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    tools:context=".user.CadastroUser_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="CYBERFOX STORE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:text="Criar uma nova conta"
+        android:layout_gravity="center"
+        android:layout_marginTop="20mm"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Por favor coloque todas informações!"/>
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:hint="Email"
+        android:textColorHint="#4D4D4D"
+        android:id="@+id/edtEmail"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:background="@drawable/custom_edit_text"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edtSenha"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:textColorHint="#4D4D4D"
+        android:hint="Senha"
+        android:background="@drawable/custom_edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_personalizado02"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Cadastrar a conta"
+        android:textColor="@color/black"
+        android:id="@+id/btnCadastrar"
+        android:layout_marginTop="50dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/btnVoltar"
+            android:background="@drawable/ic_launcher_setaesquerda_foreground"/>
+    </LinearLayout>
+
+</LinearLayout>

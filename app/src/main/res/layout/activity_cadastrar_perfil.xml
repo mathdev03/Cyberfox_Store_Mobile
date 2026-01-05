@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    tools:context=".user.CadastroUser_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="CYBERFOX STORE"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Defina seu usuário"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Clique na imagem para escolher\na foto de perfil"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/img_perfil"
+        android:contentDescription="Escolher foto de perfil"
+        android:src="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:id="@+id/edtApelido"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textColorHint="#4D4D4D"
+        android:hint="Usuário"
+        android:background="@drawable/custom_edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_personalizado02"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Cadastrar o perfil"
+        android:textColor="@color/black"
+        android:id="@+id/btnCadastrar"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
