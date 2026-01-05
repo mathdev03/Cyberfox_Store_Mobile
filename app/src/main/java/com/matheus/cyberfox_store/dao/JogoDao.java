@@ -19,7 +19,7 @@ import java.util.List;
 
 public class JogoDao {
 
-    private static String ip = "192.168.0.107";
+    private static String ip = "Seu Endereço IP";
     private static String base = "http://"+ip+":/mobilecyberfox";
 
     public JogoDao(){
