@@ -21,8 +21,8 @@ Aplicativo Android que permite navegar, comprar e gerenciar jogos digitais. Clie
 ---
 
 ## Demo / Screenshots
-> Coloque aqui um GIF curto do fluxo: abrir app → login → comprar jogo → biblioteca.  
-![Tela Inicial](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Inicio.jpeg "Tela de ínicio")
+> Tela de ínicio
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Inicio.jpeg" width="60%" alt="Tela inicial do app">
 
 ---
 
