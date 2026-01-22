@@ -11,15 +11,7 @@
 - [Visão geral](#visão-geral)  
 - [Demo / Screenshots](#demo--screenshots)  
 - [Tecnologias](#tecnologias)  
-- [Estrutura](#estrutura)  
-- [Instalação (rápida)](#instalação-rápida)  
-- [Como rodar (dev)](#como-rodar-dev)  
-- [Endpoints principais (API)](#endpoints-principais-api)  
-- [Exemplos de uso (Ion / curl)](#exemplos-de-uso-ion--curl)  
-- [Banco de dados — esquema mínimo](#banco-de-dados--esquema-mínimo)  
-- [Segurança e produção](#segurança-e-produção)  
-- [Contribuição](#contribuição)  
-- [Licença](#licença)
+- [Estrutura](#estrutura)
 
 ---
 
