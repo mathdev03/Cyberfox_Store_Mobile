@@ -24,6 +24,23 @@ Aplicativo Android que permite navegar, comprar e gerenciar jogos digitais. Clie
 > Tela de ínicio
 <img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Inicio.jpeg" width="30%" alt="Tela inicial do app">
 
+> Cadastro (email e senha)
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Criar%20conta.jpeg" width="30%" alt="Tela inicial do app">
+
+> Cadastro usuário (apelido / perfil)
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Cadastro%2002.jpeg" width="30%" alt="Tela inicial do app">
+
+> Logar Usuário
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Login.jpeg" width="30%" alt="Tela inicial do app">
+
+> Dashboard (Principal / Vitrine)
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Dashboard.jpeg" width="30%" alt="Tela inicial do app">
+
+> Biblioteca
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Biblioteca.jpeg" width="30%" alt="Tela inicial do app">
+
+> Descrição do Jogo (Produto)
+<img src="https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Descrição%20Jogo.jpeg" width="30%" alt="Tela inicial do app">
 ---
 
 ## Tecnologias
