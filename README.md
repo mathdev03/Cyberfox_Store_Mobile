@@ -1,47 +1,60 @@
-Visão geral
+# Loja de Jogos Android — Mobile Client + PHP Backend
 
-Aplicativo Android (Android Studio) — loja virtual para venda de jogos.
-Cliente em Java + XML, comunicação com backend PHP via Ion (JSON). Banco de dados: MySQL.
+> Aplicativo Android (Java + XML) que conecta a um backend PHP (REST JSON) para venda e gestão de jogos.  
+> Status: **Protótipo funcional** — autenticação por JWT, banco MySQL.  
 
-Tecnologias
-* Android: Java, XML (Activities / Fragments)
-* HTTP client: Ion
-* Backend: PHP (endpoints REST que trocam JSON)
-* Banco: MySQL
-* utenticação recomendada: JWT (fortemente recomendado)
-* Produção: obrigar HTTPS (TLS)
+[![build status](https://img.shields.io/badge/build-local-yellow)](#) [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![status](https://img.shields.io/badge/status-prot%C3%B3tipo-orange)](#)
 
-Estrutura da aplicação
-* Cliente envia requests com Ion.
-* Backend valida, autentica, aplica regras de negócio e acessa o banco.
-* Não confiar em validações do cliente — tudo deve ser validado no servidor.
+---
 
-Telas
+## Sumário
+- [Visão geral](#visão-geral)  
+- [Demo / Screenshots](#demo--screenshots)  
+- [Tecnologias](#tecnologias)  
+- [Estrutura](#estrutura)  
+- [Instalação (rápida)](#instalação-rápida)  
+- [Como rodar (dev)](#como-rodar-dev)  
+- [Endpoints principais (API)](#endpoints-principais-api)  
+- [Exemplos de uso (Ion / curl)](#exemplos-de-uso-ion--curl)  
+- [Banco de dados — esquema mínimo](#banco-de-dados--esquema-mínimo)  
+- [Segurança e produção](#segurança-e-produção)  
+- [Contribuição](#contribuição)  
+- [Licença](#licença)
 
-Tela 1 — Tela Inicial
-Objetivo: carregar configurações e direcionar para login ou cadastro.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Inicio.jpeg "Tela de ínicio")
+---
 
-Tela 2 — Cadastro (email e senha)
-Objetivo: criar conta com email + senha.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Criar%20conta.jpeg "Tela de cadastro")
+## Visão geral
+Aplicativo Android que permite navegar, comprar e gerenciar jogos digitais. Cliente em Java/XML que se comunica com um backend PHP via JSON (Ion no cliente). O backend expõe endpoints REST que autenticam via JWT e acessam um banco MySQL.
 
-Tela 3 — Cadastro usuário (apelido / perfil)
-Objetivo: completar perfil com apelido e avatar opcional.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Cadastro%2002.jpeg "Tela de cadastro usuário")
+---
 
-Tela 4 — Logar Usuário
-Objetivo: usuário poder logar assim que estiver cadastro no app
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Login.jpeg "Tela de login")
+## Demo / Screenshots
+> Coloque aqui um GIF curto do fluxo: abrir app → login → comprar jogo → biblioteca.  
+![Tela Inicial](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Inicio.jpeg "Tela de ínicio")
 
-Tela 5 — Dashboard (Principal / Vitrine)
-Objetivo: apresentar jogos, barra de busca.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Dashboard.jpeg "Tela de Dashboard")
+---
 
-Tela 6 — Biblioteca
-Objetivo: listar jogos comprados/ativados pelo usuário.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Biblioteca.jpeg "Tela Biblioteca")
+## Tecnologias
+- **Android**: Java, XML (Activities / Fragments)  
+- **HTTP client (Android)**: Ion  
+- **Backend**: PHP (REST API)  
+- **Banco**: MySQL  
+- **Autenticação recomendada**: JWT (acesso + refresh token)  
+- **Produção**: HTTPS obrigatório (TLS)
 
-Tela 7 — Descrição do Jogo (Produto)
-Objetivo: apresentar detalhes do jogo: imagens, descrição, requisitos, avaliações, preço, botão Comprar.
-![alt text](https://raw.githubusercontent.com/mathdev03/Cyberfox_Store_Mobile/refs/heads/master/IMAGENS/Descrição%20Jogo.jpeg "Tela do produto")
+---
+
+## Estrutura (resumo)
+- Cliente Android envia requests com Ion → `POST /api/auth/login`, `GET /api/games` etc.  
+- Backend valida, autentica, aplica regras de negócio e acessa o banco.  
+- **Nunca confiar** nas validações do cliente — validar tudo no servidor.
+
+---
+
+## Instalação (rápida)
+**Pré-requisitos**: Java JDK, Android Studio, PHP 7.4+, MySQL, Composer (se usar libs PHP).  
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/SEU-USER/loja-jogos.git
+cd loja-jogos
